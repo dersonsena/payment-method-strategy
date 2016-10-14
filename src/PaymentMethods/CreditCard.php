@@ -5,21 +5,14 @@ namespace App\PaymentMethods;
 use App\Interfaces\ICard;
 use App\Interfaces\IPaymentMethod;
 
-class CreditCard implements IPaymentMethod, ICard
+class CreditCard implements IPaymentMethod
 {
-    public function getFlag()
-    {
-    }
+    private $card;
 
-    public function getPaymentType()
-    {
+    public function setCard(Card $card){
+        //..
     }
-
-    public function getPaymentCondition()
-    {
-    }
-
-    public function getPaymentMethod()
-    {
+    public function pay(){
+        //..
     }
 }

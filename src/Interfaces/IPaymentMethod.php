@@ -4,9 +4,7 @@ namespace App\Interfaces;
 
 use App\Models\PaymentType;
 
-interface IPaymentMethod
+interface IPaymentStrategy
 {
-    public function getPaymentType(): PaymentType;
-    public function getPaymentCondition(): PaymentCondition;
-    public function getPaymentMethod(): PaymentMethod;
+    public function pay();
 }

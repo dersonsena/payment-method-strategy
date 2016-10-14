@@ -10,6 +10,16 @@ class Context
 
 	public function __construct(IPaymentStrategy $payment)
     {
-
+        $this->payment = $payment;
 	}
+
+	public function executeAction1()
+    {
+
+    }
+
+    public function executeAction2()
+    {
+
+    }
 }

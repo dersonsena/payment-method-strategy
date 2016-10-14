@@ -11,7 +11,7 @@ class CreditCard implements IPaymentStrategy
 
     public function setCard(Card $card)
     {
-        //..
+        $this->card = $card;
     }
 
     public function pay()

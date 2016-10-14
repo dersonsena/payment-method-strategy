@@ -2,9 +2,11 @@
 
 namespace App\Interfaces;
 
+use App\Models\PaymentType;
+
 interface IPaymentMethod
 {
-    public function getPaymentType();
-    public function getPaymentCondition();
-    public function getPaymentMethod();
+    public function getPaymentType(): PaymentType;
+    public function getPaymentCondition(): PaymentCondition;
+    public function getPaymentMethod(): PaymentMethod;
 }
